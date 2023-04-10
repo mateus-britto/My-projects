@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey-form.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title" id="title">Fitness Survey</h1>
+            <p class="description header-desc">Please take some time to help us improve our platform</p>
+        </header>
+
+        <form id="survey-form" class="survey-form">
+            <div class="form">
+                <label for="name" id="name-label" class="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" class="form-control">
+            </div>
+            <div class="form">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" class="form-control">
+            </div>
+            <div class="form">
+                <label for="number" id="number-label">Age <span class="optional">(optional)</span></label>
+                <input id="number" type="number" min="8" max="120" placeholder="Enter your age" class="form-control">
+            </div>
+            <div class="form">
+                <label for="dropdown" id="dropdown-label">Which type of training do you preffer?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="1">Strength Training</option>
+                    <option value="2">Cardiovascular Training</option>
+                    <option value="3">High-intensity interval training (HIIT)</option>
+                    <option value="4">High-intensity circuit training (HICT)</option>
+                    <option value="5">Pilates</option>
+                </select>
+            </div>
+            <div class="form">
+                <p class="description-desc">Would your recommend our gym to a friend?</p>
+                <label for="recommendation" id="recommendation-label">
+                    <input type="radio" id="recommendation" name="recommendation" value="defenitely" class="choice"
+                        checked> Defenitely
+                </label>
+                <label for="recommendation" id="recommendation-label" name="recommendation">
+                    <input type="radio" id="recommendation" value="maybe" name="recommendation" class="choice"> Maybe
+                </label>
+                <label for="recommendation" id="recommendation-label" name="recommendation">
+                    <input type="radio" id="recommendation" value="not-sure" name="recommendation" class="choice"> Not
+                    Sure
+                </label>
+            </div>
+            <div class="form">
+                <label for="dropdown" id="dropdown-label">What do you like most about our gym?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="1">Facilities</option>
+                    <option value="2">Staff</option>
+                    <option value="3">Courses</option>
+                </select>
+            </div>
+            <div class="form">
+                <p class="description-imp">What would you like to see improved? <span class="improve">(check all that
+                        apply)</span></p>
+                <label for="improvement" id="improvement-label">
+                    <input type="checkbox" id="improvement" name="improvement"> Facilities
+                </label>
+                <label for="improvement" id="improvement-label" name="improvement">
+                    <input type="checkbox" id="improvement"> Staff
+                </label>
+                <label for="improvement" id="improvement-label" name="improvement">
+                    <input type="checkbox" id="improvement"> Courses
+                </label>
+                <label for="improvement" id="improvement-label" name="improvement">
+                    <input type="checkbox" id="improvement"> Group Activities
+                </label>
+                <label for="improvement" id="improvement-label" name="improvement">
+                    <input type="checkbox" id="improvement"> Social Media
+                </label>
+            </div>
+            <div class="form">
+                <p class="description-sug">Any comments or suggestions?</p>
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form button-div">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
