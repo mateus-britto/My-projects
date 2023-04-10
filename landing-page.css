@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Merriweather:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;500;700&family=Rubik:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* 
+    font size for easy rem calculations
+    default document font size = 16px, 1rem = 16px, 100% = 16px
+    (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  color: gainsboro;
+  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #232526, #414345);
+  background-attachment: fixed;
+}
+
+#page-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  margin-bottom: 5rem;
+  min-height: 7.5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #242627;
+}
+
+.img-logo {
+  height: 100%;
+  width: 100%;
+  max-width: 20rem;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.nav-a {
+  color: gainsboro;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+#main-content {
+  margin-top: 15rem;
+  width: 100%;
+}
+
+#subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-desc {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  font-size: 1.6rem;
+  width: 27.5rem;
+  padding: 0.5rem;
+  margin: 2rem 0;
+}
+
+.button {
+  width: 12rem;
+  background-color: #c61f22;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #414345;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  font-size: 1.6rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  max-width: 80rem;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 20rem;
+}
+
+.fa-solid {
+  font-size: 5rem;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80rem;
+}
+
+#tutorial {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2rem solid black;
+  height: 31rem;
+  width: 50rem;
+}
+
+.prices h1 {
+  color: black;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  text-align: center;
+  background-color: gainsboro;
+  width: 100%;
+}
+
+.prices h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.prices ul {
+  list-style: none;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+  padding-bottom: 3rem;
+}
+
+#footer {
+  display: block;
+  background-color: #242627;
+  width: 90%;
+  max-width: 120rem;
+}
+
+#footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+
+#footer a {
+  color: gainsboro;
+}
+
+#footer p {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 980px) {
+  html {
+    font-size: 55%;
+  }
+
+  .img-logo {
+    padding-bottom: 1rem;
+  }
+
+  .prices ul {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 1rem;
+
+  }
+
+  .booster li {
+    margin-bottom: 0.7rem;
+  }
+
+  .button {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 7.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 45%;
+  }
+}

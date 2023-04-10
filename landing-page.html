@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b4f03823c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="landing-page.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <img src="Yu-Gi-Oh_Logo.png" alt="logo" class="img-logo">
+            <nav id="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a class="nav-a" href="#features">Features</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#tutorial">Tutorial</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section id="subscription">
+                <h1 class="sub-desc">The Definitive Yu-Gi-Oh! Marketplace</h1>
+                <form class="form" action="https://www.submit.com/email-submit">
+                    <input class="email" type="email" id="email" placeholder="Enter your email" required>
+                    <input class="button" type="submit" id="submit" name="Submit">
+                </form>
+            </section>
+
+            <section id="features">
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <div class="desc">
+                        <h1>Premium Materials</h1>
+                        <p>Our cards are 100% original made specifically by Konami®.</p>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="desc">
+                        <h1>Fast Shipping</h1>
+                        <p>You will recieve your cards ASAP.</p>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div class="desc">
+                        <h1>Quality Assurance</h1>
+                        <p>For every purchase you make, we will ensure there are no damages or faults.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tutorial">
+                <iframe width="550" height="300" src="https://www.youtube.com/embed/55gsu3_36Fs"
+                    title="How To Play Yu-Gi-Oh in 3 Minutes!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen class="video">
+                </iframe>
+            </section>
+
+            <section id="pricing">
+                <div class="prices">
+                    <h1>Booster Packs</h1>
+                    <h2>$1.99</h2>
+                    <ul class="booster">
+                        <li>Legendary Duelists: Ancient Millennium</li>
+                        <li>Legendary Duelists: White Dragon Abyss</li>
+                        <li>Legendary Duelists: Magical Hero</li>
+                    </ul>
+                    <input id="submit" type="submit" value="SELECT" class="button"></input>
+                </div>
+                <div class="prices">
+                    <h1>Starter Decks</h1>
+                    <h2>$9.99</h2>
+                    <ul class="decks">
+                        <li>Egyptian God Deck: Slifer The Sky Dragon</li>
+                        <li>Egyptian God Deck: Obelisk The Tormentor</li>
+                        <li>Egyptian God Deck: Winged Dragon of Ra</li>
+                    </ul>
+                    <input id="submit" type="submit" value="SELECT" class="button"></input>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Therms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>Copyright 2000, Yu-Gi-Oh!</p>
+        </footer>
+    </div>
+</body>
+
+</html>
