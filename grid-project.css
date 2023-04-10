@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Lato:wght@100&family=Merriweather:wght@300&family=Pathway+Gothic+One&family=Playfair+Display&family=Poppins:wght@200&family=Roboto:wght@100;300;500;700&family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* 
+    font size for easy rem calculations
+    default document font size = 16px, 1rem = 16px, 100% = 16px
+    (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+*/
+
+html {
+    font-size: 62.5%;
+    background: #f8f7f2;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.5fr 0.4fr 0.6fr 0.2fr;
+    row-gap: 3rem;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "main-content main-content main-content"
+        "content1 content2 content3"
+        "footer footer footer";
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #2f2f2f;
+    text-align: center;
+    font-weight: bold;
+    background: #f8f7f2;
+}
+
+header {
+    grid-area: header;
+    border-bottom: 0.2rem solid black;
+}
+
+header h1 {
+    font-size: 16rem;
+    font-style: italic;
+
+}
+
+header p {
+    border-top: 0.2rem solid black;
+    font-weight: 600;
+}
+
+main {
+    grid-area: main;
+}
+
+.img {
+    height: 60rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    filter: grayscale(100%);
+}
+
+.caption {
+    border-bottom: 0.2rem solid black;
+    padding-bottom: 1rem;
+}
+
+#main-content {
+    grid-area: main-content;
+    border-bottom: 0.2rem solid black;
+    padding: 2rem 2.5rem 0 2.5rem;
+}
+
+#main-content h1 {
+    padding-bottom: 1.5rem;
+}
+
+#main-content p {
+    text-align: justify;
+    padding-bottom: 5rem;
+}
+
+#content1 {
+    grid-area: content1;
+    padding: 0 2.5rem;
+}
+
+#content1 h1 {
+    padding-bottom: 2rem;
+}
+
+#content1 p {
+    text-align: justify;
+}
+
+#content2 {
+    grid-area: content2;
+    border-left: 0.2rem solid #2f2f2f;
+    border-right: 0.2rem solid #2f2f2f;
+    padding: 0 2.5rem;
+}
+
+#content2 h1 {
+    padding-bottom: 2rem;
+}
+
+#content2 p {
+    text-align: justify;
+}
+
+#content3 {
+    grid-area: content3;
+    padding: 0 2.5rem;
+}
+
+#content3 h1 {
+    padding-bottom: 2rem;
+}
+
+#content3 p {
+    text-align: justify;
+}
+
+#footer {
+    grid-area: footer;
+    border-top: 0.2rem solid #2f2f2f;
+    border-bottom: 0.2rem solid #2f2f2f;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#footer-content a {
+    color: #2f2f2f;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.8fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "main-content"
+            "content1"
+            "content2"
+            "content3"
+            "footer"
+    }
+
+    #content1 {
+        border-bottom: 0.2rem solid #2f2f2f;
+        padding-bottom: 5rem;
+
+    }
+
+    #content2 {
+        border-left: none;
+        border-right: none;
+        border-bottom: 0.2rem solid #2f2f2f;
+        padding-bottom: 5rem;
+    }
+
+    html {
+        font-size: 30%;
+    }
+}
