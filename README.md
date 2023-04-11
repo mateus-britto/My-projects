@@ -2,4 +2,4 @@
 
 Welcome to my GitHub page!
 
-My name is Mateus and i am an aspiring web developer. In this page you will find some of my projects.
+My name is Mateus, an aspiring web developer. Here you will find some of the projects.
