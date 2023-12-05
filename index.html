@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/b4f03823c8.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,800;1,100;1,200;1,300;1,800&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -17,34 +18,77 @@
 
     <nav class="nav-bar">
         <ul class="nav-ul">
-            <li class="nav-li">Introduction</li>
-            <li class="nav-li">work</li>
-            <li class="nav-li">Contact</li>
+            <li class="nav-li"><a href="#about">About</a></li>
+            <li class="nav-li"><a href="#work">Work</a></li>
+            <li class="nav-li"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <main class="main-content">
-        <h1 class="main-content-title"></h1>
-        <div class="work-wrapper">
-            <figure class="form-img-container">
-                <img class="project-img" src="project-images/form-img.png" alt="form">
-                <figcaption class="">Form project</figcaption>
-            </figure>
-            <figure class="landing-page-img-container">
-                <img class="project-img" src="project-images/landing-page-img.png" alt="form">
-                <figcaption class="">Simple Landing Page project</figcaption>
-            </figure>
-            <figure class="technical-doc-img-container">
-                <img class="project-img" src="project-images/technical-documentation-img.png" alt="form">
-                <figcaption class="">Technical Documentation project</figcaption>
-            </figure>
-            <figure class="technical-doc-img-container">
-                <img class="project-img" src="project-images/tribute-page-img.png" alt="form">
-                <figcaption class="">Tribute Page project</figcaption>
-            </figure>
-        </div>
-    </main>
+    <div class="container">
 
+        <section id="about">
+            <div class="fade-in-text intro">
+                <span class="introduction-name">Mateus Britto</span>
+                <span class="introduction-title">Web Developer</span>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="main-content">
+                <h1 class="main-content-html-title">A taste of my work using HTML/CSS</h1>
+                <div class="work-wrapper">
+                    <figure class="form img-container">
+                        <img class="project-img" src="project-images/form-img.png" alt="form">
+                        <figcaption class="img-caption">
+                            <a href="form/survey-form.html" target="_blank">Form project</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="landing-page img-container">
+                        <img class="project-img" src="project-images/landing-page-img.png" alt="form">
+                        <figcaption class="img-caption">
+                            <a href="landing-page/landing-page.html" target="_blank">Simple Landing Page project</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="technical-doc img-container">
+                        <img class="project-img" src="project-images/technical-documentation-img.png" alt="form">
+                        <figcaption class="img-caption">
+                            <a href="technical-documentation/technical-documentation-page.html" target="_blank">
+                                Technical Documentation project
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="tribute-page img-container">
+                        <img class="project-img" src="project-images/tribute-page-img.png" alt="form">
+                        <figcaption class="img-caption">
+                            <a href="tribute-page/tribute-page.html" target="_blank">Tribute Page project</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h1 class="main-content-js-title">Now some work using JavaScript</h1>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-info">
+                <ul>
+                    <li><a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/">
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn</a></li>
+                    <li><a href="https://github.com/">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub</a></li>
+                    <li><a href="https://www.instagram.com/">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
