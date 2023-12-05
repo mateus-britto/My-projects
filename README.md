@@ -1,4 +1,4 @@
-# My projects
+# My Projects
 
 Welcome to my GitHub page!
 
