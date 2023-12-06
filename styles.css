@@ -13,7 +13,7 @@ font-family: 'Roboto', sans-serif;
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* (1rem = 10px) */
+    font-size: 100%;
 }
 
 body {
@@ -33,21 +33,27 @@ body {
     padding-right: 50px;
 }
 
-.nav-ul {
+.nav-ul,
+.nav-li {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    height: 4rem;
 }
 
-.nav-li {}
-
-.nav-li a {
+.section-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: antiquewhite;
+    height: 100%;
     font-size: 1.5rem;
-    padding: 16px 20px;
+    padding: 0 20px;
     transition: background-color 1s ease;
 }
 
-.nav-li a:hover {
+.section-link:hover {
     background-color: rgba(24, 89, 63, 0.5);
 }
 
@@ -105,10 +111,28 @@ body {
 #work {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     background-color: #185a3f;
+}
+
+
+.work-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "title-html title-html"
+        "form landing-page"
+        "technical-doc tribute-page"
+        "title-js title-js";
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.title-wrapper-html {
+    grid-area: title-html;
 }
 
 .main-content-html-title {
@@ -116,21 +140,39 @@ body {
     font-weight: 300;
     font-size: 2.5rem;
     padding-top: 70px;
+    text-align: center;
 }
 
-.work-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "form landing-page"
-        "technical-doc tribute-page";
-    row-gap: 40px;
-    column-gap: 40px;
+.from {
+    grid-area: form;
+}
+
+.landing-page {
+    grid-area: landing-page;
+}
+
+.technical-doc {
+    grid-area: technical-doc;
+}
+
+.tribute-page {
+    grid-area: tribute-page;
+}
+
+.title-wrapper-js {
+    grid-area: title-js;
+}
+
+.main-content-js-title {
+    color: antiquewhite;
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding-top: 70px;
+    text-align: center;
 }
 
 .img-container {
-    width: 450px;
+    width: 350px;
     background-color: #0F0F0F;
     border-radius: 5px;
 }
@@ -159,29 +201,6 @@ body {
 .img-caption a:hover {
     color: greenyellow;
     transform: scale(1.1);
-}
-
-.from {
-    grid-area: form;
-}
-
-.landing-page {
-    grid-area: landing-page;
-}
-
-.technical-doc {
-    grid-area: technical-doc;
-}
-
-.tribute-page {
-    grid-area: tribute-page;
-}
-
-.main-content-js-title {
-    color: antiquewhite;
-    font-weight: 300;
-    font-size: 2.5rem;
-    padding-top: 70px;
 }
 
 #contact {
@@ -228,4 +247,70 @@ body {
 
 .contact-info a:hover {
     color: greenyellow;
+}
+
+@media (max-width: 50rem) {
+    html {
+        font-size: 52%;
+    }
+
+    .nav-bar {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .work-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;
+        grid-template-areas:
+            "title-html"
+            "form"
+            "landing-page"
+            "technical-doc"
+            "tribute-page"
+            "title-js";
+        justify-items: center;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 10px;
+    }
+
+    .img-container {
+        width: 250px;
+    }
+
+    .main-content-html-title,
+    .main-content-js-title {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .quote {
+        font-size: 1.3rem;
+    }
+
+    .author {
+        font-size: 0.8rem;
+    }
+
+    .invite {
+        font-size: 1.5rem;
+    }
+
+    .contacts-list {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+
 }
