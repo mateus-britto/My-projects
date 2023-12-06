@@ -1,3 +1,8 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+ */
+
 * {
     margin: 0;
     padding: 0;
@@ -74,13 +79,13 @@ body {
 
 .introduction-name {
     color: antiquewhite;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 300;
     font-style: italic;
 }
 
 .introduction-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
     font-style: italic;
     text-align: center;
@@ -96,8 +101,38 @@ body {
     }
 }
 
+
+#work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #185a3f;
+}
+
+.main-content-html-title {
+    color: antiquewhite;
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding-top: 70px;
+}
+
+.work-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "form landing-page"
+        "technical-doc tribute-page";
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
 .img-container {
-    width: 400px;
+    width: 450px;
+    background-color: #0F0F0F;
+    border-radius: 5px;
 }
 
 .project-img {
@@ -105,7 +140,92 @@ body {
     height: auto;
 }
 
-/*
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; 
- *
+.img-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+
+.img-caption a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 1.2rem;
+}
+
+.img-caption a:hover {
+    color: greenyellow;
+    transform: scale(1.1);
+}
+
+.from {
+    grid-area: form;
+}
+
+.landing-page {
+    grid-area: landing-page;
+}
+
+.technical-doc {
+    grid-area: technical-doc;
+}
+
+.tribute-page {
+    grid-area: tribute-page;
+}
+
+.main-content-js-title {
+    color: antiquewhite;
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding-top: 70px;
+}
+
+#contact {
+    height: 100vh;
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-div {
+    height: 15rem;
+}
+
+.quote {
+    color: antiquewhite;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.author {
+    color: antiquewhite;
+    letter-spacing: 1px;
+}
+
+.invite {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 50px 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.contact-info a {
+    color: antiquewhite;
+}
+
+.contact-info a:hover {
+    color: greenyellow;
+}
