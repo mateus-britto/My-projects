@@ -200,7 +200,6 @@ body {
 
 .img-caption a:hover {
     color: greenyellow;
-    transform: scale(1.1);
 }
 
 #contact {
@@ -210,6 +209,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .quote-div {
@@ -249,6 +249,79 @@ body {
     color: greenyellow;
 }
 
+.contacts-list li {
+    padding: 0 10px;
+}
+
+@media (max-width: 80rem) {
+    html {
+        font-size: 60%;
+    }
+
+    .nav-bar {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .section-link {
+        font-size: 2rem;
+    }
+
+    .work-wrapper {
+        justify-items: center;
+        align-items: center;
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+
+    .img-container {
+        max-width: 350px;
+    }
+
+    .img-container {
+        width: 400px;
+    }
+
+    .main-content-html-title,
+    .main-content-js-title {
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+    }
+
+    .quote {
+        font-size: 3rem;
+    }
+
+    .author {
+        font-size: 1.5rem;
+    }
+
+    .invite {
+        font-size: 3rem;
+    }
+
+    .contacts-list {
+        flex-direction: column;
+    }
+
+    .contacts-list li {
+        padding: 20px;
+    }
+
+    .contacts-list a {
+        font-size: 3.5rem;
+    }
+}
+
 @media (max-width: 50rem) {
     html {
         font-size: 52%;
@@ -276,8 +349,12 @@ body {
         row-gap: 20px;
     }
 
-    .img-container {
-        width: 250px;
+    .project-img {
+        display: none;
+    }
+
+    .img-caption {
+        padding: 10px 0;
     }
 
     .main-content-html-title,
@@ -291,8 +368,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
-
+        gap: 50px;
     }
 
     .quote {
@@ -304,13 +380,18 @@ body {
     }
 
     .invite {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .contacts-list {
         flex-direction: column;
-        font-size: 1rem;
     }
 
+    .contacts-list li {
+        padding: 0;
+    }
 
+    .contacts-list a {
+        font-size: 2rem;
+    }
 }
