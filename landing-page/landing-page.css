@@ -13,10 +13,10 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  position: relative;
   color: gainsboro;
   font-size: 100%;
   font-family: 'Poppins', sans-serif;
@@ -30,7 +30,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
 }
 
 #header {
@@ -43,7 +42,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(36, 38, 39, 0.9);
 }
 
@@ -83,6 +82,7 @@ a:hover {
 #main-content {
   margin-top: 15rem;
   width: 100%;
+  padding: 0 10px;
 }
 
 #subscription {
@@ -233,7 +233,7 @@ a:hover {
 #footer {
   display: block;
   background-color: rgba(36, 38, 39, 0.9);
-  width: 100vw;
+  width: 100%;
 }
 
 #footer ul {
