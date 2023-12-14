@@ -5,28 +5,42 @@
     text-decoration: none;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: linear-gradient(115deg, rgba(58, 58, 58, 0.9),
-            rgba(120, 150, 195, 0.7)), url(technical-documentation-page-background.jpg) no-repeat center center/cover;
+    background: url(technical-documentation-page-background.webp) no-repeat center center/cover;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #dcdcdc;
 }
 
 #page-wrapper {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    padding: 0 20px;
+    padding: 10px 20px;
     position: relative;
 }
 
-#nav-bar {
-    min-width: 230px;
-    border-right: solid 2px #dcdcdc;
+#nav-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5px 10px;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(25, 24, 42, 0.8);
 }
 
 .title {
-    padding: 10px 0
+    padding: 10px 0;
+    font-style: italic;
 }
 
 .nav-list {
@@ -34,7 +48,7 @@ body {
 }
 
 .nav-list li {
-    padding: 10px 0;
+    padding: 10px 5px;
 }
 
 .nav-link {
@@ -43,5 +57,55 @@ body {
 }
 
 .nav-link:hover {
-    color: aqua
+    color: aquamarine
+}
+
+#main-container {
+    min-width: 300px;
+    max-width: 1600px;
+    background-color: rgba(25, 24, 42, 0.8);
+    border-radius: 5px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main h1 {
+    padding: 5px 0;
+    font-style: italic;
+    color: #7fffd4;
+}
+
+.main li {
+    list-style: inside;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.reference-link {
+    color: #dcdcdc;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+
+.reference-link:hover {
+    color: #7fffd4;
+}
+
+.backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
