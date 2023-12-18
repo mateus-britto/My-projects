@@ -120,8 +120,7 @@ body {
     grid-template-areas:
         "title-html title-html"
         "form landing-page"
-        "technical-doc tribute-page"
-        "title-js title-js";
+        "technical-doc tribute-page";
     row-gap: 40px;
     column-gap: 40px;
 }
@@ -152,10 +151,6 @@ body {
 
 .tribute-page {
     grid-area: tribute-page;
-}
-
-.title-wrapper-js {
-    grid-area: title-js;
 }
 
 .main-content-js-title {
