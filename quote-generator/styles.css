@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(library.jpg) no-repeat center center/cover;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px #000;
+    background-color: gainsboro;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    margin-bottom: 50px;
+    background-color: #000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: #ffffff solid 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 20px;
+}
+
+.quote {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.author-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.generator {
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    border: #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.generator:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 50rem) {
+    html {
+        font-size: 75%;
+    }
+
+    .main-container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 40rem) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media (max-width: 30rem) {
+    html {
+        font-size: 60%;
+    }
+}
