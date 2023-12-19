@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #2a2929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #dcdcdc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    height: 600px;
+    width: 500px;
+    padding: 8px;
+    border: solid black 2px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "display display display display display"
+        "number number number plus minus"
+        "number number number multi divide"
+        "number number number clear equals"
+        "zero zero decimal clear equals";
+    background-color: #000000;
+}
+
+.display {
+    grid-area: display;
+    display: flex;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    padding: 10px;
+}
+
+.upper {
+    font-size: 1.5rem;
+}
+
+.lower {
+    font-size: 3rem;
+}
+
+.grid-item {
+    font-size: 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-item:active {
+    background-color: orangered;
+}
+
+.operator {
+    background-color: grey;
+}
+
+.number {
+    background-color: #dcdcdc;
+}
+
+.add {
+    grid-area: plus;
+}
+
+.subtract {
+    grid-area: minus;
+}
+
+.multiply {
+    grid-area: multi;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.clear {
+    grid-area: clear;
+    background-color: orange;
+}
+
+.equals {
+    grid-area: equals;
+    background-color: greenyellow;
+}
+
+.decimal {
+    grid-area: decimal;
+    background-color: #dcdcdc;
+}
+
+.num-0 {
+    grid-area: zero;
+}
