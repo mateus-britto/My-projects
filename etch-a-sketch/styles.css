@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    background: linear-gradient(45deg, #000000, #434343);
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+
+.title-container {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin: 0 auto;
+    font-size: 80px;
+    letter-spacing: 1.5px;
+}
+
+.board {
+    width: 750px;
+    height: 750px;
+    margin: 0 auto;
+    display: grid;
+    border: solid gray 10px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.grid-item:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+button {
+    height: 60px;
+    width: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.size-btn {
+    background-color: #3B82F6;
+    border: none;
+}
+
+.black-btn {
+    background-color: #3B82F6;
+    color: black;
+    border: none;
+}
+
+.clear-btn {
+    background-color: #3B82F6;
+    border: none;
+}
+
+.reset-btn {
+    background-color: #3B82F6;
+    border: none;
+}
+
+.random-btn {
+    padding: 0 20px 0 20px;
+    background-color: rgb(38, 37, 37);
+    border: #fff 2px solid;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.letter-1 {
+    color: greenyellow;
+}
+
+.letter-2 {
+    color: yellow;
+}
+
+.letter-3 {
+    color: lightblue;
+}
+
+.letter-4 {
+    color: orangered;
+}
+
+.letter-5 {
+    color: plum;
+}
