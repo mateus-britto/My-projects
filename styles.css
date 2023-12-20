@@ -1,11 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 100%;
@@ -21,8 +30,14 @@ body {
     width: 100%;
     height: 4rem;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
     background: #0F0F0F;
     padding-right: 50px;
@@ -30,21 +45,35 @@ body {
 
 .nav-ul,
 .nav-li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     list-style: none;
     height: 4rem;
 }
 
 .section-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: antiquewhite;
     height: 100%;
     font-size: 1.5rem;
     padding: 0 20px;
+    -webkit-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
     transition: background-color 1s ease;
 }
 
@@ -58,23 +87,42 @@ body {
 
 #about {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0F0F0F), color-stop(#185a3f), to(#0F0F0F));
+    background: -o-linear-gradient(top, #0F0F0F, #185a3f, #0F0F0F);
     background: linear-gradient(180deg, #0F0F0F, #185a3f, #0F0F0F);
 }
 
 .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     opacity: 0;
+    -webkit-animation: fadeIn 2s forwards;
     animation: fadeIn 2s forwards;
 }
 
 .fade-in-text span {
     opacity: 0;
+    -webkit-animation: fadeIn 2s forwards;
     animation: fadeIn 2s forwards;
 }
 
@@ -92,6 +140,16 @@ body {
     text-align: center;
 }
 
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -104,9 +162,18 @@ body {
 
 
 #work {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100vh;
     background-color: #185a3f;
@@ -114,18 +181,26 @@ body {
 
 
 .work-wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 40px 1fr;
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 40px 1fr 40px 1fr 40px 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
         "title-html title-html"
         "form landing-page"
         "technical-doc tribute-page";
     row-gap: 40px;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
     column-gap: 40px;
 }
 
 .title-wrapper-html {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: title-html;
 }
 
@@ -138,18 +213,26 @@ body {
 }
 
 .from {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: form;
 }
 
 .landing-page {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
     grid-area: landing-page;
 }
 
 .technical-doc {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: technical-doc;
 }
 
 .tribute-page {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
     grid-area: tribute-page;
 }
 
@@ -173,16 +256,28 @@ body {
 }
 
 .img-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-bottom: 5px;
 }
 
 
 .img-caption a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: antiquewhite;
     font-size: 1.2rem;
@@ -195,9 +290,18 @@ body {
 #contact {
     height: 100vh;
     background: #191919;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 50px;
 }
@@ -228,6 +332,8 @@ body {
 
 .contact-info ul {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
     font-size: 2rem;
@@ -251,7 +357,11 @@ body {
     }
 
     .nav-bar {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         padding: 0;
     }
@@ -262,7 +372,11 @@ body {
 
     .work-wrapper {
         justify-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
         column-gap: 40px;
         row-gap: 40px;
     }
@@ -283,8 +397,14 @@ body {
     }
 
     #contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 120px;
     }
@@ -302,6 +422,9 @@ body {
     }
 
     .contacts-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -320,13 +443,19 @@ body {
     }
 
     .nav-bar {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         padding: 0;
     }
 
     .work-wrapper {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 100px 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 100px;
         grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;
         grid-template-areas:
             "title-html"
@@ -336,7 +465,11 @@ body {
             "tribute-page"
             "title-js";
         justify-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
         column-gap: 0;
         row-gap: 20px;
     }
@@ -357,8 +490,14 @@ body {
     }
 
     #contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 50px;
     }
@@ -376,6 +515,9 @@ body {
     }
 
     .contacts-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -385,5 +527,31 @@ body {
 
     .contacts-list a {
         font-size: 2rem;
+    }
+
+    .title-wrapper-html {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+
+    .from {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .landing-page {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+
+    .technical-doc {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+    }
+
+    .tribute-page {
+        -ms-grid-row: 9;
+        -ms-grid-column: 1;
     }
 }
