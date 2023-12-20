@@ -1,29 +1,35 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+#about,
+#contact,
+#work,
+body {
+    height: 100vh
+}
+
+#contact,
+#work,
+.intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal
+}
 
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none
 }
 
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-size: 100%;
+    font-size: 100%
 }
 
 body {
-    height: 100vh;
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif
 }
 
 .nav-bar {
@@ -39,74 +45,80 @@ body {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
-    background: #0F0F0F;
-    padding-right: 50px;
+    background: #0f0f0f;
+    padding-right: 50px
 }
 
+.nav-li,
 .nav-ul,
-.nav-li {
+.section-link {
     display: -webkit-box;
     display: -ms-flexbox;
+    -webkit-box-pack: center
+}
+
+.nav-li,
+.nav-ul {
     display: flex;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     list-style: none;
-    height: 4rem;
+    height: 4rem
 }
 
 .section-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: antiquewhite;
+    color: #faebd7;
     height: 100%;
     font-size: 1.5rem;
     padding: 0 20px;
-    -webkit-transition: background-color 1s ease;
-    -o-transition: background-color 1s ease;
-    transition: background-color 1s ease;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s
+}
+
+#about,
+#work,
+.intro {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+#about,
+.img-caption {
+    -webkit-box-pack: center
 }
 
 .section-link:hover {
-    background-color: rgba(24, 89, 63, 0.5);
+    background-color: rgba(24, 89, 63, .5)
 }
 
 .container {
-    padding-top: 4rem;
+    padding-top: 4rem
 }
 
 #about {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0F0F0F), color-stop(#185a3f), to(#0F0F0F));
-    background: -o-linear-gradient(top, #0F0F0F, #185a3f, #0F0F0F);
-    background: linear-gradient(180deg, #0F0F0F, #185a3f, #0F0F0F);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0f0f0f), color-stop(#185a3f), to(#0f0f0f));
+    background: -o-linear-gradient(top, #0f0f0f, #185a3f, #0f0f0f);
+    background: linear-gradient(180deg, #0f0f0f, #185a3f, #0f0f0f)
 }
 
 .intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
@@ -116,57 +128,52 @@ body {
     -ms-flex-align: center;
     align-items: center;
     opacity: 0;
-    -webkit-animation: fadeIn 2s forwards;
-    animation: fadeIn 2s forwards;
+    -webkit-animation: 2s forwards fadeIn;
+    animation: 2s forwards fadeIn
 }
 
 .fade-in-text span {
     opacity: 0;
-    -webkit-animation: fadeIn 2s forwards;
-    animation: fadeIn 2s forwards;
+    -webkit-animation: 2s forwards fadeIn;
+    animation: 2s forwards fadeIn
 }
 
 .introduction-name {
-    color: antiquewhite;
+    color: #faebd7;
     font-size: 4rem;
     font-weight: 300;
-    font-style: italic;
+    font-style: italic
 }
 
 .introduction-title {
     font-size: 3rem;
     font-weight: 300;
     font-style: italic;
-    text-align: center;
+    text-align: center
 }
 
 @-webkit-keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-
 #work {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
@@ -175,10 +182,8 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 100vh;
-    background-color: #185a3f;
+    background-color: #185a3f
 }
-
 
 .work-wrapper {
     display: -ms-grid;
@@ -187,91 +192,87 @@ body {
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 1fr 40px 1fr 40px 1fr 40px 1fr;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-        "title-html title-html"
-        "form landing-page"
-        "technical-doc tribute-page";
+    grid-template-areas: "title-html title-html" "form landing-page" "technical-doc tribute-page";
     row-gap: 40px;
     -webkit-column-gap: 40px;
     -moz-column-gap: 40px;
-    column-gap: 40px;
+    column-gap: 40px
+}
+
+.img-caption,
+.img-caption a {
+    display: -webkit-box;
+    display: -ms-flexbox
 }
 
 .title-wrapper-html {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
-    grid-area: title-html;
+    grid-area: title-html
 }
 
-.main-content-html-title {
-    color: antiquewhite;
+.main-content-html-title,
+.main-content-js-title {
+    color: #faebd7;
     font-weight: 300;
     font-size: 2.5rem;
     padding-top: 70px;
-    text-align: center;
+    text-align: center
 }
 
 .from {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    grid-area: form;
+    grid-area: form
 }
 
 .landing-page {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
-    grid-area: landing-page;
+    grid-area: landing-page
 }
 
 .technical-doc {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
-    grid-area: technical-doc;
+    grid-area: technical-doc
 }
 
 .tribute-page {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
-    grid-area: tribute-page;
-}
-
-.main-content-js-title {
-    color: antiquewhite;
-    font-weight: 300;
-    font-size: 2.5rem;
-    padding-top: 70px;
-    text-align: center;
+    grid-area: tribute-page
 }
 
 .img-container {
     width: 350px;
-    background-color: #0F0F0F;
-    border-radius: 5px;
+    background-color: #0f0f0f;
+    border-radius: 5px
 }
 
 .project-img {
     max-width: 100%;
-    height: auto;
+    height: auto
 }
 
 .img-caption {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 5px;
+    padding-bottom: 5px
 }
 
+.author,
+.quote {
+    padding: 0 5px;
+    color: #faebd7
+}
 
 .img-caption a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -279,22 +280,24 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: antiquewhite;
-    font-size: 1.2rem;
+    color: #faebd7;
+    font-size: 1.2rem
 }
 
+#contact,
+.contact-info ul {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.contact-info a:hover,
 .img-caption a:hover {
-    color: greenyellow;
+    color: #adff2f
 }
 
 #contact {
-    height: 100vh;
     background: #191919;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
@@ -303,57 +306,47 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 50px;
+    gap: 50px
 }
 
 .quote-div {
-    height: 15rem;
+    height: 15rem
 }
 
 .quote {
-    color: antiquewhite;
     font-weight: 300;
-    font-size: 2.5rem;
-    padding: 0 5px;
+    font-size: 2.5rem
 }
 
 .author {
-    color: antiquewhite;
-    letter-spacing: 1px;
-    padding: 0 5px;
+    letter-spacing: 1px
 }
 
 .invite {
-    color: antiquewhite;
+    color: #faebd7;
     text-align: center;
     font-size: 2.3rem;
-    padding: 50px 0;
+    padding: 50px 0
 }
 
 .contact-info ul {
     list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 20px;
-    font-size: 2rem;
+    font-size: 2rem
 }
 
 .contact-info a {
-    color: antiquewhite;
-}
-
-.contact-info a:hover {
-    color: greenyellow;
+    color: #faebd7
 }
 
 .contacts-list li {
-    padding: 0 10px;
+    padding: 0 10px
 }
 
-@media (max-width: 80rem) {
+@media (max-width:80rem) {
     html {
-        font-size: 60%;
+        font-size: 60%
     }
 
     .nav-bar {
@@ -363,11 +356,11 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 0;
+        padding: 0
     }
 
     .section-link {
-        font-size: 2rem;
+        font-size: 2rem
     }
 
     .work-wrapper {
@@ -378,22 +371,19 @@ body {
         -webkit-column-gap: 40px;
         -moz-column-gap: 40px;
         column-gap: 40px;
-        row-gap: 40px;
+        row-gap: 40px
     }
 
     .img-container {
         max-width: 350px;
-    }
-
-    .img-container {
-        width: 400px;
+        width: 400px
     }
 
     .main-content-html-title,
     .main-content-js-title {
         font-size: 3rem;
         margin: 0;
-        padding: 0;
+        padding: 0
     }
 
     #contact {
@@ -406,40 +396,45 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        gap: 120px;
+        gap: 120px
     }
 
+    .invite,
     .quote {
-        font-size: 3rem;
+        font-size: 3rem
     }
 
     .author {
-        font-size: 1.5rem;
-    }
-
-    .invite {
-        font-size: 3rem;
+        font-size: 1.5rem
     }
 
     .contacts-list {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
+        flex-direction: column
     }
 
     .contacts-list li {
-        padding: 20px;
+        padding: 20px
     }
 
     .contacts-list a {
-        font-size: 3.5rem;
+        font-size: 3.5rem
     }
 }
 
-@media (max-width: 50rem) {
+@media (max-width:50rem) {
+
+    .from,
+    .landing-page,
+    .technical-doc,
+    .tribute-page {
+        -ms-grid-column: 1
+    }
+
     html {
-        font-size: 52%;
+        font-size: 52%
     }
 
     .nav-bar {
@@ -449,7 +444,7 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 0;
+        padding: 0
     }
 
     .work-wrapper {
@@ -457,13 +452,7 @@ body {
         grid-template-columns: 1fr;
         -ms-grid-rows: 100px 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 100px;
         grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;
-        grid-template-areas:
-            "title-html"
-            "form"
-            "landing-page"
-            "technical-doc"
-            "tribute-page"
-            "title-js";
+        grid-template-areas: "title-html" "form" "landing-page" "technical-doc" "tribute-page" "title-js";
         justify-items: center;
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -471,22 +460,22 @@ body {
         -webkit-column-gap: 0;
         -moz-column-gap: 0;
         column-gap: 0;
-        row-gap: 20px;
+        row-gap: 20px
     }
 
     .project-img {
-        display: none;
+        display: none
     }
 
     .img-caption {
-        padding: 10px 0;
+        padding: 10px 0
     }
 
     .main-content-html-title,
     .main-content-js-title {
         font-size: 2rem;
         margin: 0;
-        padding: 0;
+        padding: 0
     }
 
     #contact {
@@ -499,59 +488,52 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        gap: 50px;
+        gap: 50px
     }
 
     .quote {
-        font-size: 1.1rem;
+        font-size: 1.1rem
     }
 
     .author {
-        font-size: 0.7rem;
+        font-size: .7rem
     }
 
+    .contacts-list a,
     .invite {
-        font-size: 2rem;
+        font-size: 2rem
     }
 
     .contacts-list {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
+        flex-direction: column
     }
 
     .contacts-list li {
-        padding: 0;
-    }
-
-    .contacts-list a {
-        font-size: 2rem;
+        padding: 0
     }
 
     .title-wrapper-html {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
-        -ms-grid-column-span: 1;
+        -ms-grid-column-span: 1
     }
 
     .from {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;
+        -ms-grid-row: 3
     }
 
     .landing-page {
-        -ms-grid-row: 5;
-        -ms-grid-column: 1;
+        -ms-grid-row: 5
     }
 
     .technical-doc {
-        -ms-grid-row: 7;
-        -ms-grid-column: 1;
+        -ms-grid-row: 7
     }
 
     .tribute-page {
-        -ms-grid-row: 9;
-        -ms-grid-column: 1;
+        -ms-grid-row: 9
     }
 }
