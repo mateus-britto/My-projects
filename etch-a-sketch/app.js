@@ -56,6 +56,42 @@ function attachTileEventListeners(tile) {
   tile.addEventListener("mousedown", () => onMouseDown(tile));
   tile.addEventListener("mouseup", onMouseUp);
   tile.addEventListener("mouseenter", () => onMouseEnter(tile));
+  // Event listeners for mobile
+  tile.addEventListener("touchstart", (e) => onTouchStart(e, tile), {
+    passive: false,
+  });
+  tile.addEventListener("touchend", onTouchEnd, { passive: false });
+  tile.addEventListener("touchmove", (e) => onTouchMove(e, tile), {
+    passive: false,
+  });
+}
+
+// Auxiliary functions to touch (mobile) event listeners
+function onTouchStart(event, tile) {
+  event.preventDefault(); // Prevent scrolling and zooming
+  isClicking = true;
+  changeTileColor(tile);
+}
+
+function onTouchEnd(event) {
+  event.preventDefault(); // Prevent scrolling and zooming
+  isClicking = false;
+}
+
+function onTouchMove(event, tile) {
+  event.preventDefault(); // Prevent scrolling and zooming
+  if (isClicking) {
+    // Get the touch position relative to the grid
+    let touch = event.touches[0];
+    let touchedElement = document.elementFromPoint(
+      touch.clientX,
+      touch.clientY
+    );
+
+    if (touchedElement && touchedElement.classList.contains("grid-item")) {
+      changeTileColor(touchedElement);
+    }
+  }
 }
 
 // Auxiliary functions to the mouse event listeners

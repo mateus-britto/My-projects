@@ -112,3 +112,15 @@ body {
 .num-0 {
     grid-area: zero;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .wrapper {
+        height: 500px;
+        width: 350px;
+    }
+}
