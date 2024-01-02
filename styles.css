@@ -69,13 +69,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
-
-.fade-in-text span {
-    opacity: 0;
-    animation: fadeIn 2s forwards;
 }
 
 .introduction-name {
@@ -92,17 +85,6 @@ body {
     text-align: center;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
 #work {
     display: flex;
     flex-direction: column;
@@ -116,21 +98,29 @@ body {
 
 .work-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        "title-html title-html"
-        "form landing-page"
-        "technical-doc tribute-page"
-        "calc quote"
-        "sketch .";
+        "title-html title-html title-html"
+        "form landing-page technical-doc"
+        "tribute-page calc quote"
+        "sketch . .";
     row-gap: 40px;
     column-gap: 40px;
     padding: 20px 0;
 }
 
-.title-wrapper-html {
-    grid-area: title-html;
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 .main-content-html-title {
@@ -138,6 +128,10 @@ body {
     font-weight: 300;
     font-size: 2.5rem;
     text-align: center;
+}
+
+.title-wrapper-html {
+    grid-area: title-html;
 }
 
 .from {
