@@ -83,7 +83,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .title-container {
@@ -105,7 +105,7 @@ body {
     font-weight: 300;
     font-style: italic;
     text-shadow: 1px 1px 2px #000000;
-    font-family: 'Rubik Lines', system-ui;
+    font-family: 'Rubik Lines', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -115,7 +115,7 @@ body {
     font-size: 2rem;
     background-color: transparent;
     color: antiquewhite;
-    font-family: 'Rubik Lines', system-ui;
+    font-family: 'Rubik Lines', sans-serif;
     letter-spacing: 1px;
     border: none;
     cursor: pointer;
@@ -190,7 +190,7 @@ body {
     font-size: 3.5rem;
     text-align: center;
     text-shadow: 1px 1px 2px #000000;
-    font-family: 'Rubik Lines', system-ui;
+    font-family: 'Rubik Lines', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -284,7 +284,7 @@ body {
     align-items: center;
     gap: 50px;
     text-shadow: 1px 1px 2px #000000;
-    font-family: 'Rubik Lines', system-ui;
+    font-family: 'Rubik Lines', sans-serif;
     letter-spacing: 1px;
 }
 
