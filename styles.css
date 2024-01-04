@@ -115,8 +115,6 @@ body {
     font-size: 2rem;
     background-color: transparent;
     color: antiquewhite;
-    font-family: 'Rubik Lines', sans-serif;
-    letter-spacing: 1px;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -190,8 +188,6 @@ body {
     font-size: 3.5rem;
     text-align: center;
     text-shadow: 1px 1px 2px #000000;
-    font-family: 'Rubik Lines', sans-serif;
-    letter-spacing: 1px;
 }
 
 .title-wrapper-html {
@@ -284,7 +280,6 @@ body {
     align-items: center;
     gap: 50px;
     text-shadow: 1px 1px 2px #000000;
-    font-family: 'Rubik Lines', sans-serif;
     letter-spacing: 1px;
 }
 
