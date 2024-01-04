@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +65,8 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, #0F0F0F, #185a3f, #0F0F0F);
+    padding: 0 40px;
+    gap: 50px;
 }
 
 .intro {
@@ -70,18 +74,74 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    width: 30rem;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px #000000;
+}
+
+.call-to-action {
+    color: antiquewhite;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: 'Rubik Lines', system-ui;
+    letter-spacing: 1px;
+}
+
+.contact-btn {
+    height: 6rem;
+    width: 13rem;
+    font-size: 2rem;
+    background-color: transparent;
+    color: antiquewhite;
+    font-family: 'Rubik Lines', system-ui;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+.contact-btn:hover {
+    background-color: #0F0F0F;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
 }
 
 .introduction-name {
     color: antiquewhite;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 300;
     font-style: italic;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .introduction-title {
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2.5rem;
+    font-weight: 600;
     font-style: italic;
     text-align: center;
 }
@@ -91,9 +151,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #185a3f;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    background: linear-gradient(180deg, #0F0F0F, #185a3f, #0F0F0F);
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 
@@ -104,8 +164,8 @@ body {
     grid-template-areas:
         "title-html title-html title-html"
         "form landing-page technical-doc"
-        "tribute-page calc quote"
-        "sketch . .";
+        "tribute-page calc sketch"
+        "tic quote .";
     row-gap: 40px;
     column-gap: 40px;
     padding: 20px 0;
@@ -127,8 +187,11 @@ body {
 .main-content-html-title {
     color: antiquewhite;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: 'Rubik Lines', system-ui;
+    letter-spacing: 1px;
 }
 
 .title-wrapper-html {
@@ -166,6 +229,10 @@ body {
     grid-area: sketch;
 }
 
+.tic-tac-toe {
+    grid-area: tic;
+}
+
 .main-content-js-title {
     color: antiquewhite;
     font-weight: 300;
@@ -178,12 +245,14 @@ body {
     width: 350px;
     background-color: #0F0F0F;
     border-radius: 5px;
+    border-radius: 4px;
 }
 
 .project-img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 4px 4px 0 0;
 }
 
 .img-caption {
@@ -208,12 +277,15 @@ body {
 
 #contact {
     height: 100vh;
-    background: #191919;
+    background: linear-gradient(180deg, #0F0F0F, #123f2c, #0F0F0F);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: 'Rubik Lines', system-ui;
+    letter-spacing: 1px;
 }
 
 .quote-div {
@@ -273,6 +345,23 @@ body {
 }
 
 @media (max-width: 1200px) {
+
+    #about {
+        flex-direction: column;
+    }
+
+    .intro {
+        order: 1;
+    }
+
+    .profile-container {
+        order: 0;
+    }
+
+    #work {
+        padding: 0 0 80px 0;
+    }
+
     .work-wrapper {
         display: grid;
         grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -282,13 +371,14 @@ body {
             "form landing-page"
             "technical-doc tribute-page"
             "calc quote"
-            "sketch .";
+            "sketch tic";
         justify-items: center;
         align-items: center;
         row-gap: 40px;
         column-gap: 40px;
         padding: 20px 0;
     }
+
 }
 
 @media (max-width: 980px) {
@@ -373,7 +463,8 @@ body {
             "tribute-page"
             "calc"
             "quote"
-            "sketch";
+            "sketch"
+            "tic";
         justify-items: center;
         align-items: center;
         column-gap: 0;
