@@ -1,10 +1,17 @@
+//Variables
 const squares = document.querySelectorAll(".square");
 const winner = document.querySelector(".winning-message");
 const message = document.querySelector(".message");
 const restart = document.querySelector(".restart");
+const playerScore = document.querySelector(".player-score");
+const cpuScore = document.querySelector(".cpu-score");
+const resetScoreBtn = document.querySelector(".score-reset");
 
 let currentPlayer = "X";
+let pScore = 0;
+let cScore = 0;
 
+// Game start function
 function startGame() {
   squares.forEach((square) => {
     square.addEventListener(
@@ -14,6 +21,13 @@ function startGame() {
           square.textContent = currentPlayer;
           if (checkWinner(currentPlayer)) {
             message.textContent = `${currentPlayer} Wins!`;
+            if (currentPlayer === "X") {
+              pScore++;
+              playerScore.textContent = pScore;
+            } else {
+              cScore++;
+              cpuScore.textContent = cScore;
+            }
             winner.classList.add("show");
           } else if (checkDraw()) {
             message.textContent = "Draw!";
@@ -30,12 +44,14 @@ function startGame() {
 }
 startGame();
 
+// Check for draw
 function checkDraw() {
   return [...squares].every((square) => {
     return square.textContent === "X" || square.textContent === "O";
   });
 }
 
+// Check for winner using an array of winning combinations
 function checkWinner(player) {
   const winConditions = [
     [0, 1, 2],
@@ -55,6 +71,7 @@ function checkWinner(player) {
   });
 }
 
+// Board reset
 function resetBoard() {
   squares.forEach((square) => {
     square.textContent = "";
@@ -62,7 +79,16 @@ function resetBoard() {
   currentPlayer = "X";
 }
 
+// Restart button event listener
 restart.addEventListener("click", () => {
   startGame();
   resetBoard();
+});
+
+// Reset score event listener
+resetScoreBtn.addEventListener("click", () => {
+  pScore = 0;
+  cScore = 0;
+  playerScore.textContent = pScore;
+  cpuScore.textContent = cScore;
 });
