@@ -42,8 +42,8 @@ body {
 }
 
 .square {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     border: solid #232526 3px;
     display: flex;
     justify-content: center;
@@ -109,8 +109,14 @@ body {
     font-size: 3rem;
     background-color: white;
     border: 1px solid black;
-    padding: .25em .5em;
+    padding: 10px 20px;
     cursor: pointer;
+}
+
+.restart:hover {
+    background-color: #000;
+    color: #fff;
+    border: solid #fff 1px;
 }
 
 .show {
@@ -119,7 +125,7 @@ body {
 
 .score-container {
     background-color: #f5f5f5;
-    width: 200px;
+    width: 100px;
     padding: 10px 10px;
     border-radius: 8px;
 }
@@ -152,14 +158,24 @@ body {
     transform: translateY(4px);
 }
 
+@media (max-width: 800px) {
+    .board {
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 480px) {
 
     .game-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .square {
-        height: 115px;
-        width: 115px;
+        height: 110px;
+        width: 110px;
+    }
+
+    .winning-message {
+        font-size: 3rem;
     }
 }
