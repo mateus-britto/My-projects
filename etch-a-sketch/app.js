@@ -134,7 +134,7 @@ function randomColor() {
 
 // Collect the user input
 function userInput(input) {
-  input = prompt("Select the board size:");
+  input = prompt("Type in a board size between 1 and 100:");
   input = Number(input);
 
   let message = document.querySelector(".message");
