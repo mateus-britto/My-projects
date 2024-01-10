@@ -11,7 +11,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,800;1,100;1,200;1,300;1,800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="landing-page.css">
+    <style>
+        /* Inline Critical CSS */
+        #header,
+        #nav-bar,
+        .nav-ul {
+            display: flex;
+        }
+
+        #header {
+            background-color: rgba(36, 38, 39, .9);
+            position: fixed;
+            top: 0;
+            margin-bottom: 5rem;
+            min-height: 7.5rem;
+            padding: 1rem 2rem;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+        }
+
+        .nav-ul {
+            flex-direction: row;
+            gap: 8rem;
+        }
+
+        .nav-a {
+            font-size: 2.5rem;
+            color: #dcdcdc;
+            font-weight: 700;
+        }
+
+        a:hover {
+            color: #ee2225;
+        }
+    </style>
+
+    <!-- Non-critical CSS -->
+    <link rel="stylesheet" href="landing-page.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="landing-page.css">
+    </noscript>
+
     <title>Landing Page</title>
 </head>
 
@@ -71,7 +113,8 @@
 
             <section id="tutorial">
                 <div class="youtube-container" data-video-id="55gsu3_36Fs">
-                    <img src="https://img.youtube.com/vi/55gsu3_36Fs/hqdefault.jpg" alt="Video Title">
+                    <img src="https://img.youtube.com/vi/55gsu3_36Fs/hqdefault.jpg" alt="Video Title" width="550"
+                        height="350">
                     <button class="play-button">PLAY</button>
                 </div>
 
@@ -121,7 +164,6 @@
         </ul>
         <p>Copyright 2000, Yu-Gi-Oh!</p>
     </footer>
-    <script src="app.js"></script>
 </body>
 
 </html>
