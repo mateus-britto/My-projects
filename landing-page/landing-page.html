@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Definitive Yu-Gi-Oh! Marketplace">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
@@ -37,7 +38,7 @@
 
         .nav-a {
             font-size: 2.5rem;
-            color: #dcdcdc;
+            color: black;
             font-weight: 700;
         }
 
@@ -47,10 +48,11 @@
     </style>
 
     <!-- Non-critical CSS -->
-    <link rel="stylesheet" href="landing-page.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="landing-page.css" as="style" onload="this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="landing-page.css">
     </noscript>
+
 
     <title>Landing Page</title>
 </head>
@@ -58,7 +60,7 @@
 <body>
     <div id="page-wrapper">
         <header id="header">
-            <img src="Yu-Gi-Oh_Logo.png" alt="logo" class="img-logo" width="224" height="89">
+            <img src="Yu-Gi-Oh_Logo.webp" alt="logo" class="img-logo" width="224" height="89">
             <nav id="nav-bar">
                 <ul class="nav-ul">
                     <li class="nav-li"><a class="nav-a" href="#subscription">Features</a></li>
@@ -73,7 +75,7 @@
                 <h1 class="sub-desc">The Definitive Yu-Gi-Oh! Marketplace</h1>
                 <form class="form" action="https://www.submit.com/email-submit">
                     <input class="email" type="email" id="email" placeholder="Enter your email" required>
-                    <input class="button" type="submit" id="submit" name="Submit">
+                    <input class="button" type="submit-subscription" id="submit-subscription" name="Submit">
                 </form>
             </section>
 
@@ -132,7 +134,7 @@
                         </ul>
                     </div>
                     <div class="select-btn-div">
-                        <input id="submit" type="submit" value="SELECT" class="button"></input>
+                        <input id="submit-pricing1" type="submit" value="SELECT" class="button"></input>
                     </div>
                 </div>
                 <div class="prices">
@@ -148,7 +150,7 @@
                         </ul>
                     </div>
                     <div class="select-btn-div">
-                        <input id="submit" type="submit" value="SELECT" class="button"></input>
+                        <input id="submit-pricing2" type="submit" value="SELECT" class="button"></input>
                     </div>
                 </div>
             </section>

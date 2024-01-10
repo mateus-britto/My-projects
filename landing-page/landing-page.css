@@ -31,8 +31,9 @@ body {
 
 #footer p,
 .button,
+.play-button,
 .nav-a {
-  font-weight: 700
+  font-weight: bold
 }
 
 * {
@@ -94,10 +95,6 @@ body {
   flex-direction: column
 }
 
-.nav-a {
-  font-size: 2.5rem
-}
-
 a:hover {
   color: #ee2225
 }
@@ -138,7 +135,8 @@ a:hover {
   margin: 2rem 0
 }
 
-.button {
+.button,
+.play-button {
   width: 12rem;
   background-color: #ee2225;
   font-size: 2rem;
@@ -161,17 +159,6 @@ a:hover {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
-
-.play-button {
-  width: 12rem;
-  background-color: #ee2225;
-  font-size: 2rem;
-  color: #fff;
-  padding: .5rem 2rem;
-  border-radius: .3rem;
-  border: none;
-  cursor: pointer
 }
 
 .button:hover {
@@ -247,7 +234,6 @@ a:hover {
   border-radius: 1px 1px 0 0;
   width: 100%;
   color: #000;
-  font-weight: 600;
   font-size: 2.2rem;
   padding: 5px;
   height: 35px
