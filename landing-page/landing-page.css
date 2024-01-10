@@ -1,22 +1,56 @@
+#header,
+#nav-bar,
+.nav-ul {
+  display: flex
+}
+
+#features,
+.button,
+.fa-solid,
+.nav-a,
+.sub-desc {
+  text-shadow: 1px 1px 2px #000
+}
+
+#footer,
+#header {
+  background-color: rgba(36, 38, 39, .9)
+}
+
+#footer ul,
+.names-list li,
+.nav-li {
+  list-style: none
+}
+
+#footer a,
+.nav-a,
+body {
+  color: #dcdcdc
+}
+
+#footer p,
+.button,
+.nav-a {
+  font-weight: 700
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none
 }
 
 html {
   font-size: 75%;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
 
 body {
-  color: gainsboro;
   font-size: 100%;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(115deg, rgba(58, 58, 58, 0.9),
-      rgba(120, 150, 195, 0.7)), url(yu-gi-oh!-background.webp) no-repeat center center/cover;
-  background-attachment: fixed;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(115deg, rgba(58, 58, 58, .9), rgba(120, 150, 195, .7)) fixed, url(yu-gi-oh!-background.webp) center center/cover no-repeat fixed
 }
 
 #page-wrapper {
@@ -24,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 5px;
+  padding: 0 5px
 }
 
 #header {
@@ -33,149 +67,145 @@ body {
   margin-bottom: 5rem;
   min-height: 7.5rem;
   padding: 1rem 2rem;
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
-  background-color: rgba(36, 38, 39, 0.9);
+  width: 100vw
 }
 
 .img-logo {
   height: 100%;
   width: 100%;
-  max-width: 20rem;
+  max-width: 20rem
 }
 
 #nav-bar {
-  display: flex;
-  gap: 1rem;
+  gap: 1rem
 }
 
 .nav-ul {
-  display: flex;
   flex-direction: row;
-  gap: 8rem;
-  padding: ;
+  gap: 8rem
 }
 
-.nav-li {
-  list-style: none;
+#subscription,
+.form {
+  display: flex;
+  flex-direction: column
 }
 
 .nav-a {
-  color: gainsboro;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px black;
+  font-size: 2.5rem
 }
 
 a:hover {
-  color: #ee2225;
+  color: #ee2225
 }
 
 #main-content {
   margin-top: 15rem;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 10px
 }
 
 #subscription {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
 .sub-desc {
   font-size: 3rem;
-  text-align: center;
-  text-shadow: 1px 1px 2px black;
+  text-align: center
+}
+
+#features,
+.email {
+  font-size: 1.6rem
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: center
+}
+
+#features,
+.icon {
+  flex-direction: column
 }
 
 .email {
-  font-size: 1.6rem;
   width: 27.5rem;
-  padding: 0.5rem;
-  margin: 2rem 0;
+  padding: .5rem;
+  margin: 2rem 0
 }
 
 .button {
   width: 12rem;
   background-color: #ee2225;
   font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-  padding: 0.5rem 2rem;
-  border-radius: 0.3rem;
+  color: #fff;
+  padding: .5rem 2rem;
+  border-radius: .3rem;
   border: none;
-  cursor: pointer;
+  cursor: pointer
+}
+
+#features,
+#tutorial,
+.grid {
+  display: flex;
+  width: 100%
 }
 
 .button:hover {
-  background-color: #414345;
+  background-color: #414345
 }
 
 #features {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
   margin-top: 6rem;
-  margin-bottom: 6rem;
-  font-size: 1.6rem;
-  text-shadow: 1px 1px 2px black;
+  margin-bottom: 6rem
 }
 
 .grid {
-  display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  max-width: 80rem;
-  width: 100%;
+  max-width: 80rem
 }
 
 .icon {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 10rem;
-  width: 20rem;
+  width: 20rem
 }
 
 .fa-solid {
-  font-size: 5rem;
-  text-shadow: 1px 1px 2px black;
+  font-size: 5rem
 }
 
 .desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80rem;
+  width: 80rem
 }
 
 #tutorial {
-  display: flex;
   justify-content: center;
-  width: 100%;
-  margin-bottom: 8rem;
+  margin-bottom: 8rem
+}
+
+#pricing,
+.item-name {
+  justify-content: center;
+  display: flex
 }
 
 #pricing {
-  display: flex;
-  justify-content: center;
   gap: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 .prices {
@@ -190,22 +220,19 @@ a:hover {
   width: 45rem;
   height: auto;
   padding: 20px 0;
-  background-color: rgba(220, 220, 220, 0.6);
-  color: #000;
+  background-color: rgba(220, 220, 220, .6);
+  color: #000
 }
 
 .item-name {
-  display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 1px 1px 0 0;
   width: 100%;
-  height: 20px;
   color: #000;
   font-weight: 600;
   font-size: 2.2rem;
   padding: 5px;
-  height: 35px;
+  height: 35px
 }
 
 .value {
@@ -214,94 +241,86 @@ a:hover {
   align-items: center;
   font-size: 2rem;
   width: 100%;
-  background-color: transparent;
+  background-color: transparent
 }
 
 .names-list li {
-  list-style: none;
   font-size: 2rem;
-  padding: 0 5px;
+  padding: 0 5px
 }
 
 .select-btn-div {
-  padding-bottom: 5px;
+  padding-bottom: 5px
 }
 
 #footer {
   display: block;
-  background-color: rgba(36, 38, 39, 0.9);
-  width: 100%;
+  width: 100%
 }
 
 #footer ul {
-  list-style: none;
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
   padding-right: 2rem;
-  padding-top: 2rem;
-}
-
-#footer a {
-  color: gainsboro;
+  padding-top: 2rem
 }
 
 #footer p {
   display: flex;
   justify-content: flex-end;
   padding-right: 2rem;
-  padding-bottom: 2rem;
-  font-weight: bold;
+  padding-bottom: 2rem
 }
 
-@media (max-width: 1200px) {
+@media (max-width:1200px) {
   html {
-    font-size: 75%;
+    font-size: 75%
   }
 
   header {
-    flex-wrap: wrap;
+    flex-wrap: wrap
   }
 
   #pricing {
     flex-direction: column;
-    align-items: center;
+    align-items: center
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width:980px) {
+
+  .button,
+  .names-list li {
+    font-size: 1.4rem;
+    text-align: center
+  }
+
   html {
-    font-size: 70%;
+    font-size: 70%
   }
 
   .img-logo {
-    padding-bottom: 1rem;
+    padding-bottom: 1rem
   }
 
   .nav-ul {
-    gap: 5rem;
-  }
-
-  .names-list li {
-    font-size: 1.4rem;
-    text-align: center;
+    gap: 5rem
   }
 
   .button {
-    font-size: 1.4rem;
-    text-align: center;
     width: 7.5rem;
-    padding: 0.5rem;
+    padding: .5rem
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width:460px) {
   html {
-    font-size: 50%;
+    font-size: 50%
   }
 
   .prices {
     width: 40rem;
-    gap: 10px;
+    gap: 10px
   }
 }
