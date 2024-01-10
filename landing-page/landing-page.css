@@ -156,6 +156,24 @@ a:hover {
   width: 100%
 }
 
+.youtube-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.play-button {
+  width: 12rem;
+  background-color: #ee2225;
+  font-size: 2rem;
+  color: #fff;
+  padding: .5rem 2rem;
+  border-radius: .3rem;
+  border: none;
+  cursor: pointer
+}
+
 .button:hover {
   background-color: #414345
 }
