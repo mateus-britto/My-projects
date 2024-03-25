@@ -118,7 +118,7 @@ function render() {
 
   const selectedList = lists.find((list) => list.id === selectedListId);
 
-  if (selectedListId === null) {
+  if (selectedListId === null || selectedList === undefined) {
     listDisplayContainer.style.display = "none";
   } else {
     listDisplayContainer.style.display = ""; // Will revert the display to what it was
