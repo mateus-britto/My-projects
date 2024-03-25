@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/My-projects/todo-list/src/styles.css">
+    <script src="https://kit.fontawesome.com/b4f03823c8.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <title>Todo List</title>
+</head>
+
+<body>
+
+    <div class="all-projects">
+        <h2 class="project-list-title">My Projects</h2>
+        <ul class="project-list" data-lists></ul>
+        <form action="" data-new-list-form>
+            <input type="text" class="new list" placeholder="add new project" aria-label="add new project"
+                data-new-list-input />
+            <button class="btn create" aria-label="create new project">+</button>
+        </form>
+        <button class="btn delete-list" data-delete-list-button>Delete Project</button>
+    </div>
+
+    <div class="todo-list" data-list-display-container>
+        <h2 class="how-to">Project Manager</h2>
+        <div class="todo-header">
+            <h2 class="list-title" data-list-title></h2>
+            <p class="task-count" data-list-count></p>
+        </div>
+
+        <div class="todo-body">
+            <div class="tasks" data-tasks></div>
+
+            <div class="new-task-creator">
+                <form action="" class="task-form" data-new-task-form>
+                    <input type="text" class="new task-input" placeholder="add new task" aria-label="add new task"
+                        data-new-task-input />
+                    <button class="btn create-task" aria-label="add new task">+</button>
+                </form>
+                <div class="delete-stuff">
+                    <button class="btn delete-task" data-delete-complete-task-button>Clear completed tasks</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    <!-- The template tag stores HTML inside id that is not rendered to the page but can be used with JS -->
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox" />
+            <label></label>
+        </div>
+    </template>
+</body>
+
+</html>

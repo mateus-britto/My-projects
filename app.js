@@ -1,8 +1,8 @@
 const hiddenElements = document.querySelectorAll(".hidden");
 const contactBtn = document.querySelector(".contact-btn");
 
-// The observer checks for changes in the visibility of the selected elements and,
-// anytime it detects a change, adds a class 'show' to them, which can then be manipulated via CSS.
+// The observer checks for changes in the visibility of the selected elements and, anytime it detects
+// change, adds a class 'show' to them, which can then be manipulated via CSS.
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
